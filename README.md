@@ -1,11 +1,11 @@
 #  Clustering Methods & Numerical Linear Algebra 
-## 📊 Clustering Methods & Numerical Linear Algebra
+## Clustering Methods & Numerical Linear Algebra
 
 This project explores several fundamental clustering techniques—**K-Means**, **K-Medoids**, and **Hierarchical Clustering**—with an emphasis on their mathematical foundations and their connection to **Numerical Linear Algebra**, a core component of modern AI methods.
 
 ---
 
-### 🔗 Why Numerical Linear Algebra?
+### Why Numerical Linear Algebra?
 
 Numerical Linear Algebra provides the tools to efficiently represent and manipulate data in vector and matrix form. Since most datasets in machine learning are naturally expressed as matrices, clustering algorithms heavily rely on linear algebra operations such as:
 
@@ -18,7 +18,7 @@ These tools allow clustering algorithms to scale to large datasets while maintai
 
 ---
 
-### ⚙️ Clustering Methods Overview
+### Clustering Methods Overview
 
 #### 1. K-Means
 
@@ -27,7 +27,7 @@ K-Means partitions data into \(k\) clusters by minimizing the within-cluster var
 - Assigns points to the nearest centroid (using distance computations)  
 - Updates centroids as the mean of assigned points  
 
-**➡️ Linear Algebra Connection:**
+** Linear Algebra Connection:**
 
 - Centroids are computed as vector averages  
 - Distance calculations rely on vector norms  
@@ -39,7 +39,7 @@ K-Means partitions data into \(k\) clusters by minimizing the within-cluster var
 
 K-Medoids is similar to K-Means but uses actual data points (medoids) as cluster centers, making it more robust to outliers.
 
-**➡️ Linear Algebra Connection:**
+** Linear Algebra Connection:**
 
 - Pairwise distance matrices are central  
 - Optimization involves minimizing total dissimilarity  
@@ -54,7 +54,7 @@ This method builds a tree (dendrogram) of clusters using either:
 - Agglomerative (bottom-up)  
 - Divisive (top-down) strategies  
 
-**➡️ Linear Algebra Connection:**
+** Linear Algebra Connection:**
 
 - Distance matrices are iteratively updated  
 - Linkage criteria (single, complete, average) depend on matrix operations  
@@ -62,7 +62,7 @@ This method builds a tree (dendrogram) of clusters using either:
 
 ---
 
-### 🧠 Connection to AI
+### Connection to AI
 
 Clustering is a form of **unsupervised learning**, widely used in:
 
