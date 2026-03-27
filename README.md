@@ -1,41 +1,74 @@
 #  Clustering Methods & Numerical Linear Algebra 
-##  Overview
+## 📊 Clustering Methods & Numerical Linear Algebra
 
-Clustering is a fundamental concept in **unsupervised learning**, where the goal is to group data points based on similarity without predefined labels. In this session, we explored three major clustering methods:
+This project explores several fundamental clustering techniques—**K-Means**, **K-Medoids**, and **Hierarchical Clustering**—with an emphasis on their mathematical foundations and their connection to **Numerical Linear Algebra**, a core component of modern AI methods.
 
-- **K-Means**
-- **K-Medoids**
-- **Hierarchical Clustering**
+---
 
-Understanding these methods is essential for many real-world AI applications, including customer segmentation, anomaly detection, image compression, and bioinformatics.
+### 🔗 Why Numerical Linear Algebra?
 
-##  Why Clustering Is Important
+Numerical Linear Algebra provides the tools to efficiently represent and manipulate data in vector and matrix form. Since most datasets in machine learning are naturally expressed as matrices, clustering algorithms heavily rely on linear algebra operations such as:
 
-Clustering allows us to:
+- Vector norms (e.g., Euclidean distance)  
+- Matrix operations (multiplication, factorization)  
+- Eigenvalues and eigenvectors (in advanced methods)  
+- Optimization techniques  
 
-- Discover **hidden structures** in data
-- Simplify complex datasets into meaningful groups
-- Serve as a **preprocessing step** for other machine learning tasks
-- Identify patterns without labeled data
+These tools allow clustering algorithms to scale to large datasets while maintaining computational efficiency.
 
-Each method has its strengths:
+---
 
-| Method              | Key Idea                                      | Strengths                                  |
-|--------------------|----------------------------------------------|--------------------------------------------|
-| K-Means            | Uses centroids (mean of clusters)             | Fast, scalable                             |
-| K-Medoids          | Uses actual data points as centers            | Robust to outliers                         |
-| Hierarchical       | Builds a tree of clusters (dendrogram)        | No need to predefine number of clusters     |
+### ⚙️ Clustering Methods Overview
 
+#### 1. K-Means
 
-##  Role of Numerical Linear Algebra
+K-Means partitions data into \(k\) clusters by minimizing the within-cluster variance. It iteratively:
 
-Clustering methods rely heavily on **numerical linear algebra (NLA)** techniques. These provide the computational backbone for handling high-dimensional data efficiently.
+- Assigns points to the nearest centroid (using distance computations)  
+- Updates centroids as the mean of assigned points  
 
-### 1. Vector Representation of Data
+**➡️ Linear Algebra Connection:**
 
-- Data points are represented as **vectors** in ℝⁿ
-- Entire datasets are stored as **matrices**
-- Distance computations rely on vector norms (e.g., Euclidean distance)
+- Centroids are computed as vector averages  
+- Distance calculations rely on vector norms  
+- Efficient implementations use matrix operations  
 
-```math
-\|x - y\|_2 = \sqrt{(x - y)^T (x - y)}
+---
+
+#### 2. K-Medoids
+
+K-Medoids is similar to K-Means but uses actual data points (medoids) as cluster centers, making it more robust to outliers.
+
+**➡️ Linear Algebra Connection:**
+
+- Pairwise distance matrices are central  
+- Optimization involves minimizing total dissimilarity  
+- Often relies on matrix-based distance computations  
+
+---
+
+#### 3. Hierarchical Clustering
+
+This method builds a tree (dendrogram) of clusters using either:
+
+- Agglomerative (bottom-up)  
+- Divisive (top-down) strategies  
+
+**➡️ Linear Algebra Connection:**
+
+- Distance matrices are iteratively updated  
+- Linkage criteria (single, complete, average) depend on matrix operations  
+- Efficient storage and updates of pairwise distances are key  
+
+---
+
+### 🧠 Connection to AI
+
+Clustering is a form of **unsupervised learning**, widely used in:
+
+- Pattern recognition  
+- Data compression  
+- Anomaly detection  
+- Preprocessing for supervised learning  
+
+Numerical Linear Algebra ensures these methods remain computationally feasible, especially for high-dimensional datasets common in AI.
