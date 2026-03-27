@@ -64,11 +64,9 @@ Clustering is a form of **unsupervised learning**, widely used in:
 - Anomaly detection  
 - Preprocessing for supervised learning
 
-
-
-
-Some **real-life examples** are provided in this [PDF document](https://github.com/AminAPNA/Mathematics-for-AI-or-data-science-Krylov-Methods-System-Solving/blob/main/Example_Projects.pdf), and the corresponding **MATLAB codes** are available [here](https://github.com/AminAPNA/Mathematics-for-AI-or-data-science-Krylov-Methods-System-Solving/tree/main/matlab_codes).
-
-
-
 Numerical Linear Algebra ensures these methods remain computationally feasible, especially for high-dimensional datasets common in AI.
+
+
+
+Some **real-life examples** are provided in this [PDF document](https://github.com/AminAPNA/Mathematics-for-AI-or-data-science-Krylov-Methods-System-Solving/blob/main/Example_Projects.pdf), and the corresponding **MATLAB codes** are available [here](https://github.com/AminAPNA/Mathematics-for-AI-or-data-science-Clustering-methods/tree/main/my-code-folder).
+
