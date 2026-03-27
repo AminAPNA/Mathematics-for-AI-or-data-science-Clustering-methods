@@ -1,9 +1,7 @@
 #  Clustering Methods & Numerical Linear Algebra 
-## Clustering Methods & Numerical Linear Algebra
 
-This project explores several fundamental clustering techniques—**K-Means**, **K-Medoids**, and **Hierarchical Clustering**—with an emphasis on their mathematical foundations and their connection to **Numerical Linear Algebra**, a core component of modern AI methods.
+This project explores several fundamental clustering techniques, **K-Means**, **K-Medoids**, and **Hierarchical Clustering**, with an emphasis on their mathematical foundations and their connection to **Numerical Linear Algebra**, a core component of modern AI methods.
 
----
 
 ### Why Numerical Linear Algebra?
 
@@ -16,7 +14,6 @@ Numerical Linear Algebra provides the tools to efficiently represent and manipul
 
 These tools allow clustering algorithms to scale to large datasets while maintaining computational efficiency.
 
----
 
 ### Clustering Methods Overview
 
@@ -33,8 +30,6 @@ K-Means partitions data into \(k\) clusters by minimizing the within-cluster var
 - Distance calculations rely on vector norms  
 - Efficient implementations use matrix operations  
 
----
-
 #### 2. K-Medoids
 
 K-Medoids is similar to K-Means but uses actual data points (medoids) as cluster centers, making it more robust to outliers.
@@ -45,7 +40,6 @@ K-Medoids is similar to K-Means but uses actual data points (medoids) as cluster
 - Optimization involves minimizing total dissimilarity  
 - Often relies on matrix-based distance computations  
 
----
 
 #### 3. Hierarchical Clustering
 
@@ -60,7 +54,6 @@ This method builds a tree (dendrogram) of clusters using either:
 - Linkage criteria (single, complete, average) depend on matrix operations  
 - Efficient storage and updates of pairwise distances are key  
 
----
 
 ### Connection to AI
 
